@@ -6,8 +6,8 @@
   align-items: center;
   justify-content: space-between;
   background-color: #e32b39;
-  padding: 20px;
-  font-size: 15px;
+  padding: 0.5%;
+  font-size: 13px;
   color: white;
 }
 .header > .header__linklogo > img {
@@ -18,7 +18,7 @@
 .header__right {
   display: flex;
   align-items: center;
-  flex: 0.3;
+  flex: 0.35;
   justify-content: space-between;
 }
 .header__right > p {

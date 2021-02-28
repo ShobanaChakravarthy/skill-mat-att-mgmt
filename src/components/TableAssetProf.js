@@ -28,14 +28,14 @@ export default function TableAssetProf() {
   const tabasset=useSelector(selectTableAsset)
   const columns = [
     { id: 'empid', label: 'Emp ID', minWidth: 60 },
-    { id: 'name', label: 'Name', minWidth: 120 },
-    { id: 'project', label: 'Project', minWidth: 100 },
+    { id: 'name', label: 'Name', minWidth: 160 },
+    { id: 'project', label: 'Project', minWidth: 80 },
     { id: 'team', label: 'Team', minWidth: 150 },
     { id: 'assetid', label: 'Asset Id', minWidth: 70 },
     { id: 'assetname', label: 'Asset Name', minWidth: 120 },
     { id: 'assetmodel', label: 'Asset Model', minWidth: 120 },
-    { id: 'allocationdate', label: 'Allocation Date', minWidth: 100 },
-    { id: 'comments', label: 'Comments', minWidth: 100 },
+    { id: 'allocationdate', label: 'Allocation Date', minWidth: 120 },
+    { id: 'comments', label: 'Comments', minWidth: 150 },
   ];
   
   const classes = useStyles();
@@ -64,7 +64,7 @@ export default function TableAssetProf() {
                   style={{ minWidth: column.minWidth,
                     backgroundColor:'#e85560',
                     color:'white',
-                    fontWeight:'bold' 
+                    lineHeight: '130%'
                   }}
                 >
                   {column.label}
@@ -72,7 +72,7 @@ export default function TableAssetProf() {
               ))}
               <TableCell style={{ backgroundColor:'#e85560',
                     color:'white',
-                    fontWeight:'bold' }}>
+                    lineHeight: '130%' }}>
                 <p>Action</p>
               </TableCell>
             </TableRow>
@@ -84,12 +84,14 @@ export default function TableAssetProf() {
                   {columns.map((column) => {
                     const value = row[column.id];
                     return (
-                      <TableCell key={column.id} align={column.align}>
+                      <TableCell key={column.id} align={column.align}
+                                 style={{lineHeight:'100%',fontSize: '80%'}}
+                      >
                         {column.format && typeof value === 'number' ? column.format(value) : value}
                       </TableCell>
                     );
                   })}
-                  <TableCell>
+                  <TableCell style={{lineHeight:'100%',fontSize: '80%'}}>
                         <Delete style={{cursor: 'pointer'}} onClick={()=>{
                                 db.collection('tableAsset')
                                 .where('empid','==',row.empid)

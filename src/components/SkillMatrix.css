@@ -1,11 +1,12 @@
 .skillmatrix {
   display: flex;
   flex-direction: column;
-  padding: 30px;
+  padding: 2%;
 }
 .skillmatrix > h2 {
   font-weight: 500;
   color: #e32b39;
+  font-size: 130%;
 }
 
 .skillmatrix__filter {
@@ -13,7 +14,7 @@
   align-items: center;
   background-color: #e6e6e6;
   padding: 1%;
-  margin-top: 20px;
+  margin-top: 2.5%;
   border-radius: 10px;
 }
 .skillmatrix__search {
@@ -23,7 +24,7 @@
   background-color: white;
   padding-left: 0.5%;
   padding-right: 1%;
-  padding-top: 5px;
+  padding-top: 0.2%;
   width: 50%;
 }
 .skillmatrix__search > .MuiSvgIcon-root {
@@ -34,7 +35,9 @@
   flex: 1;
   border: none;
   outline: none;
-  padding: 15px 10px;
+  padding: 4% 5%;
+  border-radius: 20px;
+  font-size: 12px;
 }
 .skillmatrix__search > input:focus {
   outline: none;
@@ -44,10 +47,11 @@
   display: flex;
   align-items: center;
   width: 50%;
+  font-size: 90%;
 }
 .skillmatrix__label > label {
   color: gray;
-  margin-right: 20px;
+  margin-right: 5%;
 }
 .skillmatrix__label > input {
   flex: 1;
@@ -58,20 +62,19 @@
 
 .skillmatrix__button {
   margin-left: 5% !important;
+  font-size: 75% !important;
 }
 .skillmatrix__table {
-  margin-top: 50px;
+  margin-top: 4%;
 }
 .skill__dropdown{
   flex: 1;
-  margin: 10px;
-  padding: 15px 10px;
+  margin: 2.5%;
+  padding: 4% 4%;
   border: none;
   outline-width: 0;
   border-radius: 20px;
   background-color: white;
   color: gray;
-}
-option{
-  font-size: 15px;
+  font-size: 90%;
 }

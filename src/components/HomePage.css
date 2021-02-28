@@ -6,39 +6,45 @@
 .home__profile {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 2%;
 }
 .home__profile > img {
+  max-height: 40vh;
+  min-height: 33vh;
+  max-width: 25vh;
+  min-width: 20vh;
   object-fit: cover;
-  height: 200px;
-  max-width: 200px;
+  vertical-align: bottom;
+
+  /* max-width: 12.5%; */
   border: 1px solid #e32b39;
 }
 .home__profiledata {
   display: flex;
   flex-direction: column;
-  margin-left: 10px;
+  margin-left: 1.5%;
   border: 1px solid #e32b39;
   flex: 1;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 30px;
+  padding-left: 2.5%;
+  justify-content: center;
+  min-height: 33vh;
 }
 .home__profiledata > p {
-  padding-top: 10px;
+  padding-top: 1%;
 }
 .home__assets {
-  margin-bottom: 30px;
+  margin-bottom: 3%;
 }
 .home__assets > h2,
 .home__skillset > h2 {
   font-weight: 500;
   color: #e32b39;
-  margin-bottom: 10px;
+  margin-bottom: 2%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
+  font-size: 120%;
 }
 .modal__div {
   display: flex;
