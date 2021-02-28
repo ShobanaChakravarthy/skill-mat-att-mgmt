@@ -1,0 +1,76 @@
+.assetmgmt {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+.assetmgmt > h2 {
+  font-weight: 500;
+  color: #e32b39;
+}
+
+.assetmgmt__filter {
+  display: flex;
+  align-items: center;
+  background-color: #e6e6e6;
+  padding: 1%;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.assetmgmt__search {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  background-color: white;
+  padding-left: 0.5%;
+  padding-right: 1%;
+  padding-top: 5px;
+  width: 50%;
+}
+.assetmgmt__search > .MuiSvgIcon-root {
+  color: #e32b39;
+  height: 20px;
+}
+.assetmgmt__search > input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 15px 10px;
+}
+.assetmgmt__search > input:focus {
+  outline: none;
+}
+.assetmgmt__label {
+  margin-left: 5%;
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+.assetmgmt__label > label {
+  color: gray;
+  margin-right: 5%;
+}
+.assetmgmt__label > input {
+  flex: 1;
+  border: none;
+  height: 25px;
+  outline: none;
+}
+.asset__dropdown{
+  flex: 1;
+  margin: 10px;
+  padding: 15px 10px;
+  border: none;
+  outline-width: 0;
+  border-radius: 20px;
+  background-color: white;
+  color: gray;
+}
+option{
+  font-size: 15px;
+}
+.assetmgmt__button {
+  margin-left: 3% !important;
+}
+.assetmgmt__table {
+  margin-top: 50px;
+}

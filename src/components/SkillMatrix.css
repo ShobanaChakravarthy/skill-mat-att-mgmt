@@ -1,0 +1,77 @@
+.skillmatrix {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+.skillmatrix > h2 {
+  font-weight: 500;
+  color: #e32b39;
+}
+
+.skillmatrix__filter {
+  display: flex;
+  align-items: center;
+  background-color: #e6e6e6;
+  padding: 1%;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.skillmatrix__search {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  background-color: white;
+  padding-left: 0.5%;
+  padding-right: 1%;
+  padding-top: 5px;
+  width: 50%;
+}
+.skillmatrix__search > .MuiSvgIcon-root {
+  color: #e32b39;
+  height: 20px;
+}
+.skillmatrix__search > input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 15px 10px;
+}
+.skillmatrix__search > input:focus {
+  outline: none;
+}
+.skillmatrix__label {
+  margin-left: 5%;
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+.skillmatrix__label > label {
+  color: gray;
+  margin-right: 20px;
+}
+.skillmatrix__label > input {
+  flex: 1;
+  border: none;
+  height: 25px;
+  outline: none;
+}
+
+.skillmatrix__button {
+  margin-left: 5% !important;
+}
+.skillmatrix__table {
+  margin-top: 50px;
+}
+.skill__dropdown{
+  flex: 1;
+  margin: 10px;
+  padding: 15px 10px;
+  border: none;
+  outline-width: 0;
+  border-radius: 20px;
+  background-color: white;
+  color: gray;
+}
+option{
+  font-size: 15px;
+}
